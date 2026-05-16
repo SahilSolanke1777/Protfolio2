@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Rajendra Solanke | Premium AI Portfolio</title>
+    <!-- Favicon / Theme color -->
+    <meta name="theme-color" content="#070d19">
+    <meta name="description"
+        content="Modern, responsive, and professional personal portfolio website of Sahil Rajendra Solanke, software engineering student and AI enthusiast.">
+
+    <!-- Link Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link External Stylesheet -->
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <!-- Sticky Header Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                Sahil<span class="logo-dot">.</span>AI
+            </a>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Light/Dark Mode Switcher -->
+            <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Theme">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero container">
+            <div class="hero-grid">
+                <div class="hero-content reveal-left">
+                    <div class="hero-greeting"><i class="fa-solid fa-terminal"></i> Hello World, I am</div>
+                    <h1 class="hero-title">Sahil Rajendra <br><span class="gradient-text">Solanke</span></h1>
+
+                    <!-- Typing Animation Tagline Container -->
+                    <div class="tagline-container">
+                        <span class="typed-tagline" id="typed-text"></span>
+                    </div>
+
+                    <p class="hero-desc">
+                        Welcome to my professional developer portfolio. I am an aspiring software engineer blending
+                        modern web programming methodologies with artificial intelligence tooling to construct
+                        practical, user-centric software solutions.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-layer-group"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Professional Profile Image Demonstration -->
+                <div class="hero-image-wrapper reveal-right">
+                    <div class="hero-image-frame">
+                        <img src="sahil_profile.jpg" alt="Sahil Rajendra Solanke Profile Photo">
+                        <div class="floating-badge">
+                            <i class="fa-solid fa-code floating-badge-icon"></i>
+                            <span class="floating-badge-text">First-Year Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Get to know my engineering background and motivation</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card reveal-left">
+                    <p class="about-text">
+                        I am an enthusiastic engineering student passionate about software development, AI tools, web
+                        technologies, and problem-solving. I enjoy building practical applications and continuously
+                        learning modern technologies to improve my technical and creative skills.
+                    </p>
+                    <p class="about-text">
+                        My philosophy revolves around bridging raw analytical engineering concepts with intuitive
+                        designs, constantly iterating, and expanding my horizons within high-impact tech ecosystems.
+                    </p>
+                </div>
+
+                <div class="highlights-container reveal-right">
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                        <div class="highlight-title">Passion for technology</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <div class="highlight-title">Team collaboration</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="highlight-title">Quick learner</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                        <div class="highlight-title">Interested in AI and web development</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="highlight-title">Problem-solving mindset</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Showcasing my technical implementation skills and full-stack solutions</p>
+            </div>
+
+            <div class="projects-list">
+                <!-- Project 1: DocTack -->
+                <div class="project-card reveal">
+                    <div class="project-visual">
+                        <img src="doctack_visual.png" alt="DocTack Healthcare Application Dashboard Interface">
+                    </div>
+                    <div class="project-info">
+                        <div>
+                            <div class="project-type">Healthcare Website</div>
+                            <h3 class="project-title">DocTack</h3>
+                            <p class="project-desc">
+                                DocTack is a healthcare management website designed for doctors, hospitals, and
+                                patients. The platform helps hospitals manage appointments, doctor profiles, patient
+                                records, and medical services efficiently. The website focuses on improving
+                                communication between hospitals and patients with a user-friendly dashboard and secure
+                                data handling.
+                            </p>
+
+                            <div class="features-list">
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Doctor appointment booking
+                                </div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Hospital management
+                                    dashboard</div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Patient records management
+                                </div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Responsive design</div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Secure login system</div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> User-friendly interface
+                                </div>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+
+                        <div class="btn-group" style="margin-top: 0;">
+                            <a href="figma2.html" target="_blank" class="btn btn-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/SahilSolanke1777" target="_blank" class="btn btn-outline">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Electric Vehicles Basic Project -->
+                <div class="project-card reveal" style="grid-template-columns: 1fr;">
+                    <div class="project-info">
+                        <div>
+                            <div class="project-type">Electric Vehicle Information Project</div>
+                            <h3 class="project-title">Electric Vehicles Basic Project</h3>
+                            <p class="project-desc">
+                                This project is a basic electric vehicle platform created to provide information about
+                                EV technology, vehicle types, battery systems, charging methods, and eco-friendly
+                                transportation solutions. The project demonstrates understanding of sustainable mobility
+                                and modern vehicle technologies.
+                            </p>
+
+                            <div class="features-list">
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> EV overview section</div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Battery and charging info
+                                </div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Vehicle specifications</div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Responsive UI design</div>
+                                <div class="feature-item"><i class="fa-solid fa-check"></i> Clean navigation</div>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <div class="btn-group" style="margin-top: 0;">
+                            <a href="#" class="btn btn-outline"
+                                onclick="alert('EV Project Deployment ready.'); return false;">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview
+                            </a>
+                            <a href="https://github.com/SahilSolanke1777" target="_blank" class="btn btn-outline">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="section container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Academic <span class="gradient-text">Excellence</span></h2>
+                <p class="section-subtitle">Consistent tracking of my educational milestones and testing indicators</p>
+            </div>
+
+            <div class="academics-grid reveal">
+                <!-- Card 1: HSC -->
+                <div class="academic-card">
+                    <h3 class="academic-level">HSC (Class 12)</h3>
+                    <div class="radial-progress" data-percentage="78" style="--percentage: 78%;">
+                        <span class="progress-value">78%</span>
+                    </div>
+                    <p class="academic-score-label">Higher Secondary Certificate</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 78%;"></div>
+                    </div>
+                </div>
+
+                <!-- Card 2: SSC -->
+                <div class="academic-card">
+                    <h3 class="academic-level">SSC (Class 10)</h3>
+                    <div class="radial-progress" data-percentage="76" style="--percentage: 76%;">
+                        <span class="progress-value">76%</span>
+                    </div>
+                    <p class="academic-score-label">Secondary School Certificate</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 76%;"></div>
+                    </div>
+                </div>
+
+                <!-- Card 3: MHT CET -->
+                <div class="academic-card">
+                    <h3 class="academic-level">MHT CET</h3>
+                    <div class="radial-progress" data-percentage="82" style="--percentage: 82%;">
+                        <span class="progress-value">82%</span>
+                    </div>
+                    <p class="academic-score-label">Engineering Entrance Percentile</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 82%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Professional <span class="gradient-text">Certificates</span></h2>
+                <p class="section-subtitle">Verifiable extra-curricular industry knowledge and foundational frameworks
+                </p>
+            </div>
+
+            <div class="certificates-grid reveal">
+                <!-- Certificate 1 -->
+                <div class="certificate-card">
+                    <div>
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-car-side"></i></div>
+                            <h3 class="cert-title">EV Understanding the Context</h3>
+                        </div>
+                        <p class="cert-desc">
+                            Comprehensive conceptual framework contextualizing the shift towards sustainable smart
+                            transport mobility architectures.
+                        </p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="FINAL NASSCOM Act.pdf" target="_blank" class="btn-link">
+                            View Certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card">
+                    <div>
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-battery-half"></i></div>
+                            <h3 class="cert-title">EV CT Assignment 2</h3>
+                        </div>
+                        <p class="cert-desc">
+                            Technical breakdown of modern electric propulsion setups, charging interfaces, and
+                            continuous testing metrics.
+                        </p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="FINAL NASSCOM Act.pdf" target="_blank" class="btn-link">
+                            View Certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card">
+                    <div>
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h3 class="cert-title">AI Fluency for Students</h3>
+                        </div>
+                        <p class="cert-desc">
+                            Mastery of advanced conversational AI tooling models, syntax prompting, and engineering
+                            prompt strategies.
+                        </p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="03 AI Fluency for students.pdf" target="_blank" class="btn-link">
+                            View Certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card">
+                    <div>
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-sitemap"></i></div>
+                            <h3 class="cert-title">AI Fluency Framework & Foundation</h3>
+                        </div>
+                        <p class="cert-desc">
+                            In-depth studies regarding modern LLM architecture integration parameters, model limits, and
+                            ethical scaling deployments.
+                        </p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="02 AI Fluency Framework & Foundation.pdf" target="_blank" class="btn-link">
+                            View Certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate-card">
+                    <div>
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <h3 class="cert-title">Claude 101</h3>
+                        </div>
+                        <p class="cert-desc">
+                            Specialized prompt framework certification maximizing logical context generation and
+                            zero-shot reasoning evaluation.
+                        </p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="04 Claude 101 .pdf" target="_blank" class="btn-link">
+                            View Certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 6 -->
+                <div class="certificate-card">
+                    <div>
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <h3 class="cert-title">AI Fluency for Nonprofits</h3>
+                        </div>
+                        <p class="cert-desc">
+                            Deploying agile, cost-effective automation systems to empower global community organizations
+                            efficiently.
+                        </p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="01 AI Fluency for nonprofits.pdf" target="_blank" class="btn-link">
+                            View Certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Technical & Soft <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">A well-rounded toolkit blending core software engineering logic with
+                    interpersonal dynamics</p>
+            </div>
+
+            <div class="skills-container reveal">
+                <!-- Technical Skills -->
+                <div class="skills-box">
+                    <h3 class="skills-box-title"><i class="fa-solid fa-code-compare"></i> Technical Skills</h3>
+                    <div class="tech-skills-grid">
+                        <div class="skill-badge"><i class="fa-brands fa-html5"></i> HTML</div>
+                        <div class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                        <div class="skill-badge"><i class="fa-brands fa-square-js"></i> JavaScript</div>
+                        <div class="skill-badge"><i class="fa-brands fa-react"></i> React.js</div>
+                        <div class="skill-badge"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                        <div class="skill-badge"><i class="fa-solid fa-database"></i> MongoDB</div>
+                        <div class="skill-badge"><i class="fa-brands fa-python"></i> Python</div>
+                        <div class="skill-badge"><i class="fa-brands fa-java"></i> Java</div>
+                        <div class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+                        <div class="skill-badge"><i class="fa-solid fa-microchip"></i> AI Tools</div>
+                        <div class="skill-badge"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Web Design
+                        </div>
+                        <div class="skill-badge"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skills-box">
+                    <h3 class="skills-box-title"><i class="fa-solid fa-user-group"></i> Soft Skills</h3>
+                    <div class="soft-skills-list">
+                        <div class="soft-skill-row">
+                            <div class="soft-skill-icon"><i class="fa-solid fa-comments"></i></div>
+                            <span class="soft-skill-name">Communication</span>
+                        </div>
+                        <div class="soft-skill-row">
+                            <div class="soft-skill-icon"><i class="fa-solid fa-handshake"></i></div>
+                            <span class="soft-skill-name">Teamwork</span>
+                        </div>
+                        <div class="soft-skill-row">
+                            <div class="soft-skill-icon"><i class="fa-solid fa-flag"></i></div>
+                            <span class="soft-skill-name">Leadership</span>
+                        </div>
+                        <div class="soft-skill-row">
+                            <div class="soft-skill-icon"><i class="fa-solid fa-palette"></i></div>
+                            <span class="soft-skill-name">Creativity</span>
+                        </div>
+                        <div class="soft-skill-row">
+                            <div class="soft-skill-icon"><i class="fa-solid fa-clock"></i></div>
+                            <span class="soft-skill-name">Time Management</span>
+                        </div>
+                        <div class="soft-skill-row">
+                            <div class="soft-skill-icon"><i class="fa-solid fa-compass"></i></div>
+                            <span class="soft-skill-name">Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Let's discuss opportunities, internships, or collaborative ventures</p>
+            </div>
+
+            <div class="contact-wrapper reveal">
+                <!-- Info Panel -->
+                <div class="contact-info-panel">
+                    <div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: var(--text-main);">Let's Connect</h3>
+                        <p style="color: var(--text-muted); font-size: 1.05rem;">
+                            I am open to constructive mentoring sessions, practical industry partnerships, and active
+                            peer group interactions. Feel free to reach out directly using the form or coordinates
+                            provided.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-card">
+                                <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-meta">
+                                    <h4>Email Address</h4>
+                                    <a href="mailto:sahil.solanke@example.com">sahilsolanke@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-card">
+                                <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-meta">
+                                    <h4>Phone Number</h4>
+                                    <p>+91 7498226750</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-card">
+                                <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-meta">
+                                    <h4>Current Location</h4>
+                                    <p>Maharashtra, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Animated Social Icons Container -->
+                    <div>
+                        <h4
+                            style="font-size: 0.95rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.05em;">
+                            Digital Presence</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/sahil-solanke-022aa6329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" class="social-btn" aria-label="LinkedIn Profile"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/SahilSolanke1777" target="_blank" class="social-btn"
+                                aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-btn" aria-label="Twitter Profile"
+                                onclick="alert('Twitter link placeholder.'); return false;"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-btn" aria-label="Discord Profile"
+                                onclick="alert('Discord user tag link placeholder.'); return false;"><i
+                                    class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fully Custom Styled Form -->
+                <form class="contact-form"
+                    onsubmit="alert('Message captured securely! Sahil will respond promptly.'); return false;">
+                    <h3 style="font-size: 1.4rem; color: var(--text-main);">Send a Secure Message</h3>
+
+                    <div class="form-group">
+                        <label for="sender-name" class="form-label">Full Name</label>
+                        <input type="text" id="sender-name" class="form-control" placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sender-email" class="form-label">Email Address</label>
+                        <input type="email" id="sender-email" class="form-control" placeholder="name@company.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sender-msg" class="form-label">Your Message</label>
+                        <textarea id="sender-msg" class="form-control"
+                            placeholder="Outline your message context, parameters, or questions..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="justify-content: center; margin-top: 8px;">
+                        <i class="fa-solid fa-paper-plane"></i> Transmit Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <a href="#hero" class="logo" style="font-size: 1.5rem;">
+                Sahil<span class="logo-dot">.</span>AI
+            </a>
+
+            <ul class="footer-nav">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+
+            <div class="love-message">
+                <span>Made with passion and creativity</span> <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <p class="copyright">&copy; 2026 Sahil Rajendra Solanke. Optimized for visual excellence and premium user
+                engagement.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Float Trigger -->
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll back to top" title="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Link custom JS logic -->
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
